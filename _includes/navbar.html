@@ -1,0 +1,27 @@
+<nav class="nav">
+    <div class="nav-left hide-xs">
+        <a class="brand" href="#">{{ site.title }}</a>
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </div>
+    <div class="nav-center hide-sm hide-md hide-lg">
+        <a class="brand" href="#">{{ site.title }}</a>
+    </div>
+    <div class="nav-right hide-sm hide-md hide-lg">
+        <details class="dropdown">
+            <summary class="button icon-only">
+                <img src="https://icongr.am/feather/menu.svg?size=64&color=currentColor">
+            </summary>
+            <div class="card" style="padding-left: 0; padding-right: 0; margin-left: -30%;">
+                {% for item in site.data.navigation %}
+                <p><a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+                    {{ item.name }}
+                </a></p>
+                {% endfor %}
+            </div>
+        </details>
+    </div>
+</nav>
