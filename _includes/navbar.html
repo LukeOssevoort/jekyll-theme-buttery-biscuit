@@ -6,6 +6,9 @@
             {{ item.name }}
         </a>
         {% endfor %}
+        {% if site.buttery-biscuit.darkmode %}
+        <a href="javascript:void(0)" id="theme-switch" onclick="switchMode(this)">☀️</a>
+        {% endif %}
     </div>
     <div class="nav-center hide-sm hide-md hide-lg">
         <a class="brand" href="#">{{ site.title }}</a>
@@ -21,6 +24,9 @@
                     {{ item.name }}
                 </a></p>
                 {% endfor %}
+                {% if site.buttery-biscuit.darkmode %}
+                <p><a href="javascript:void(0)" id="theme-switch" onclick="switchMode(this)">☀️</a></p>
+                {% endif %}
             </div>
         </details>
     </div>
