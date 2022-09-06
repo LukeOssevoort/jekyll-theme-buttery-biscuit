@@ -3,14 +3,14 @@
 
 @import "includes";
 
-{% if site.buttery-biscuit.theme %}
-@import "themes/{{ site.buttery-biscuit.theme }}";
-@import "theme";
-{% endif %}
-
 {% if site.buttery-biscuit.darkmode %}
 @import "themes/{{ site.buttery-biscuit.darkmode }}";
 @import "darktheme";
+{% endif %}
+
+{% if site.buttery-biscuit.theme %}
+@import "themes/{{ site.buttery-biscuit.theme }}";
+@import "theme";
 {% endif %}
 
 @import "extraStyling";
