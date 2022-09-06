@@ -7,6 +7,9 @@
         {% include navbar.html %}
         {{ content }}
         {% include footer.html %}
-        {% include scripts.html %}
+        <script src="{{ site.baseurl }}/assets/js/darkmode.js"></script>
+        {% if site.buttery-biscuit.fixed-navbar %}
+        <script src="{{ site.baseurl }}/assets/js/fixednavbar.js"></script>
+        {% endif %}
     </body>
 </html>
