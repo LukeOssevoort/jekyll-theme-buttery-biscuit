@@ -26,6 +26,7 @@ plugins:
 
 buttery-biscuit:
   darkmode: dark
+  fixed-navbar: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
