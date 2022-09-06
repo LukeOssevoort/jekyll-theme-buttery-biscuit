@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: page
 ---
 
-<div class="container">
-    {% if paginator.page == 1 %}
-    {{ content }}
-    {% endif %}
-    {% include paginate.html %}
-</div>
+
+{% if paginator.page == 1 %}
+{{ content }}
+{% endif %}
+{% include paginate.html %}
