@@ -4,11 +4,7 @@ layout: default
 
 <div class="container">
     {% if paginator.page == 1 %}
-    <div class="row">
-        <div class="col">
-            {{ content }}
-        </div>
-    </div>
+    {{ content }}
     {% endif %}
     {% include paginate.html %}
 </div>
