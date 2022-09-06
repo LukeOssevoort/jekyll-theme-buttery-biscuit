@@ -15,3 +15,11 @@
     --font-family-sans: sans-serif;
     --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
+
+body>.container {
+    max-width: 720px;
+}
+
+.nav {
+    background-color: var(--bg-secondary-color);
+}

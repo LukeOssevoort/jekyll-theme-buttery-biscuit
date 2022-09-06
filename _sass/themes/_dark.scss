@@ -6,3 +6,11 @@
     --color-grey: #ccc;
     --color-darkGrey: #777;
 }
+
+body>.container {
+    max-width: 720px;
+}
+
+.nav {
+    background-color: var(--bg-secondary-color);
+}
