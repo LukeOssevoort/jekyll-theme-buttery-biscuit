@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-buttery-biscuit"
-  spec.version       = "0.2.2"
+  spec.version       = "0.3.0"
   spec.authors       = ["Luke Ossevoort"]
   spec.email         = ["luke@ossevoort.xyz"]
 
@@ -17,4 +17,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-spaceship"
   spec.add_runtime_dependency "jekyll-paginate"
   spec.add_runtime_dependency "jekyll-seo-tag"
+  spec.add_runtime_dependency "jekyll_picture_tag"
 end
