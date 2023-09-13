@@ -4,7 +4,7 @@
 <!-- Post heading -->
 <div class="row">
     <div class="col">
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <h1 style="margin-bottom: 0;"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <p>
             Published {{ post.date | date: "%Y-%m-%d" }}
             {% for tag in post.tags %}
@@ -18,7 +18,7 @@
 <div class="row">
     {% if post.img %}
     <div class="col-4">
-        <img src="{{ post.img }}">
+        {% picture feed "{{ post.img }}" %}
     </div>
     {% endif %}
 

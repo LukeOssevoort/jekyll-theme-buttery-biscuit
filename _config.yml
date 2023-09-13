@@ -23,11 +23,17 @@ plugins:
   - jekyll-spaceship
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll_picture_tag
 
 buttery-biscuit:
   theme: default
   darkmode: dark
   fixed-navbar: false
+
+picture:
+  source: "assets/img/fullsize"
+  output: "assets/img/generated"
+  nomarkdown: false
 
 exclude:
   - readme.md
