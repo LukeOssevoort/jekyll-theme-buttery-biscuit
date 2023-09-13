@@ -33,7 +33,7 @@ buttery-biscuit:
 picture:
   source: "assets/img/fullsize"
   output: "assets/img/generated"
-  nomarkdown: false
+  nomarkdown: true
 
 exclude:
   - readme.md
