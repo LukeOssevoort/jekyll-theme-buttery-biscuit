@@ -1,6 +1,6 @@
 <nav class="nav is-vertical-align is-full-width no-print" id="navbar">
     <div class="nav-left hide-xs">
-        <a class="brand" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+        <a class="brand" href="{{ site.url }}{{ site.baseurl }}/">{{ site.title }}</a>
         {% for item in site.data.navigation %}
         <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
             {{ item.name }}
