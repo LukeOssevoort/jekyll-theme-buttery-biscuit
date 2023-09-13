@@ -2,7 +2,7 @@
     <div class="nav-left hide-xs">
         <a class="brand" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
         {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+        <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
             {{ item.name }}
         </a>
         {% endfor %}
@@ -20,7 +20,7 @@
             </summary>
             <div class="card" style="padding-left: 0; padding-right: 0; margin-left: -30%;">
                 {% for item in site.data.navigation %}
-                <p><a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+                <p><a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
                     {{ item.name }}
                 </a></p>
                 {% endfor %}
