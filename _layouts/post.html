@@ -7,9 +7,7 @@ layout: page
     <div class="col">
         <h1>{{ page.title }}</h1>
         {% if page.img %}
-        <span markdown="1">
-        {% picture "{{ page.img }}" %}
-        </span>
+        {% picture postheader "{{ page.img }}" %}
         {% endif %}
         {{ content }}
     </div>
