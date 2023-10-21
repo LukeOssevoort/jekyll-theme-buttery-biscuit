@@ -25,6 +25,8 @@ where as `picture squirrel.jpg 1:1 attention` gives
 
 {% picture squirrel.jpg 1:1 attention %}
 
+Now why bother with all this? Well modern websites are viewed on many different types of devices which don't need the same fiddelity of image as a full size desktop. Trying to load desktop size images onto a mobile device is waste of bandwidth for a device of already limited bandwidth. Picture tags take into account the size of the requesting device and limit the html request to the appropriately size, making your site load faster and be placed higher in Google searches.
+
 [jpt]: https://rbuchberger.github.io/jekyll_picture_tag/
 [W3 pic tag]: https://www.w3schools.com/TAgs/tag_picture.asp
 [jpt config]: https://rbuchberger.github.io/jekyll_picture_tag/users/configuration/
