@@ -4,15 +4,8 @@ presets:
     widths: [200, 400, 800, 1600]
     link_source: true
   
-  feed:
-    formats: [webp, original]
-    widths: [200, 400, 800, 1600]
-    link_source: true
-    crop: '3:2'
-  
   postheader:
     formats: [webp, original]
     widths: [200, 400, 800, 1600]
     link_source: true
     nomarkdown: false
-    crop: '3:2'

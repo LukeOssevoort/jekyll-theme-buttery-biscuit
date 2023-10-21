@@ -18,7 +18,11 @@
 <div class="row">
     {% if post.img %}
     <div class="col-4">
-        {% picture feed "{{ post.img }}" %}
+        {% if post.cropkeep %}
+        {% picture "{{ post.img }}" 3:2 {{ post.cropkeep }} %}
+        {% else %}
+        {% picture "{{ post.img }}" %}
+        {% endif %}
     </div>
     {% endif %}
 
