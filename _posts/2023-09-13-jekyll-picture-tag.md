@@ -4,6 +4,7 @@ title: "Using Jekyll Picture Tag"
 tags: tutorial JPT
 img: superb-fairywren.jpg
 cropkeep: attention
+author: Luke O
 excerpt_separator: <!--more-->
 ---
 
