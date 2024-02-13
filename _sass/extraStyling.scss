@@ -1,3 +1,12 @@
 .paginateindex {
     padding: 0 2px;
 }
+
+// Built in option to print in 2 columns
+@media print {
+  .twocolprint {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+  }
+}
