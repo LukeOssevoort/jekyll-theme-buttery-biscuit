@@ -11,7 +11,9 @@ layout: page
                 {% if page.author %}
                 By {{ page.author }} &emsp;
                 {% endif %}
+                {% if page.date %}
                 Published {{ page.date | date: "%Y-%m-%d" }} &emsp;
+                {% endif %}
                 {% for tag in page.tags %}
                 <span class="tag">{{ tag }}</span>
                 {% endfor %}
