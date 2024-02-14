@@ -11,6 +11,6 @@
   }
 }
 
-td:nth-child(even), th:nth-child(even) {
+tr:nth-child(even) {
   background-color: var(--color-grey);
 }
